@@ -6,8 +6,9 @@ import selenium as sm
 import pyaudio as pa
 import torch
 from tkinter import * 
-gui = Tk()
-gui.title("Hello World")
-gui.geometry('900x150')
-gui.tk.call('tk','scaling',3.0)
-gui.mainloop()
+import classDefinitions
+
+mainGui = classDefinitions.GuiInterface()
+mainGui.setButton1(0)
+mainGui.setButton2(0)
+mainGui.runGui()
